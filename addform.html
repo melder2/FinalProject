@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Appointment Information</title>
+    <link rel="stylesheet" href="css/addformCSS.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <main>
+      <div id="title"><h1>MRE Hospital Database</h1></div>
+
+      <div id="menu"><a href="index.html">Calendar</a></div>
+
+      <div id="container">
+
+    <form action="insert.php" method="post" name="form1">
+    <table width="50%" >
+    <tbody>
+    
+    <tr> 
+    <td>Date(YYYY-MM-DD)</td>
+    <td><input type="text" name="date"></td>
+    </tr>
+    
+    <tr> 
+    <td>Time Start(HH:MM:SS)</td>
+    <td><input type="text" name="timestart"></td>
+    </tr>
+
+    <tr> 
+    <td>Time End(HH:MM:SS)</td>
+    <td><input type="text" name="timeend"></td>
+    </tr>
+
+    <tr> 
+    <td>Patient ID</td>
+    <td><input type="text" name="patientID"></td>
+    </tr>
+
+    <tr> 
+    <td>Doctor</td>
+    <td><input type="text" name="doctor"></td>
+    </tr>
+
+    <tr> 
+    <td>Reason</td>
+    <td><input type="text" name="reason"></td>
+    </tr>
+
+    <tr> 
+    <td>First Name</td>
+    <td><input type="text" name="firstname"></td>
+    </tr>
+
+    <tr> 
+    <td>Last Name</td>
+    <td><input type="text" name="lastname"></td>
+    </tr>
+
+    <div id="roomnumberdiv">
+    <tr> 
+    <td>Room Number</td>
+    <td><input type="text" name="roomnumber"></td>
+    </tr>
+    </div>
+
+    <tr> 
+<td></td>
+<td><input type="submit" name="Submit" value="Add Appointment" onclick="AddButton()"></td>
+</tr>
+			
+        </tbody></table>
+    </form>
+
+      </div>
+    </main>
+	
+  <script src="js/addformJavaS.js"></script>
+  </body>
+
+</html>

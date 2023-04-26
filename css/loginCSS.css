@@ -1,0 +1,68 @@
+#title{
+    text-align: center;
+    background-color: azure;
+}
+
+body{
+    background-color: antiquewhite;
+}
+#container{
+    display: grid;
+    text-align: center;
+    background-color: azure;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 50px 50px 50px;
+    
+}
+
+#schedulingbutton{
+    text-align: center;
+    margin: 0 auto;
+}
+#sbutton{
+    height: 15px;
+    width: 15px;
+}
+
+#login{
+    text-align: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#username{
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#usernametext{
+    text-align: center;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#credentials{
+    padding-left: 10px;
+}
+
+#password{
+    text-align: center;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#passwordtext{
+    text-align: center;
+    grid-column: 1;
+    grid-row: 5;
+}
+#submitbutton{
+    text-align: center;
+    grid-column: 1;
+    grid-row: 6;
+    
+}
+
+
+

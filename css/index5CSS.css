@@ -1,0 +1,160 @@
+#title{
+    text-align: center;
+    background-color: azure;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+#january{
+    text-align: center;
+    background-color: azure;
+}
+
+#menu{
+    background-color: azure;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.2%;
+    grid-template-rows: 30px 200px;
+    
+}
+
+#sunday{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    border: 2px solid;
+    border-color: black;
+   
+}
+
+#monday{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    border: 2px solid;
+    border-color: black;
+    
+}
+
+#tuesday{
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+    border: 2px solid;
+    border-color: black;
+}
+
+#wednesday{
+    grid-column: 4;
+    grid-row: 1;
+    text-align: center;
+    border: 2px solid;
+    border-color: black;
+}
+
+#thursday{
+    grid-column: 5;
+    grid-row: 1;
+    text-align: center;
+    border: 2px solid;
+    border-color: black;
+}
+
+#friday{
+    grid-column: 6;
+    grid-row: 1;
+    text-align: center;
+    border: 2px solid;
+    border-color: black;
+}
+
+#saturday{
+    grid-column: 7;
+    grid-row: 1;
+    text-align: center;
+    border: 2px solid;
+    border-color: black;
+}
+
+#twentynine{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+    border: 2px solid;
+    border-color: black;
+    padding-left: 2px;
+    background-color: azure;
+}
+
+#thirty{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    border: 2px solid;
+    border-color: black;
+    padding-left: 2px;
+    background-color: azure;
+}
+
+#thirtyone{
+    grid-column: 3;
+    grid-row: 2;
+    text-align: left;
+    border: 2px solid;
+    border-color: black;
+    padding-left: 2px;
+    background-color: azure;
+}
+
+#blank{
+    grid-column: 4;
+    grid-row: 2;
+    text-align: left;
+    border: 2px solid;
+    border-color: black;
+    padding-left: 2px;
+    background-color: azure;
+}
+
+#blank1{
+    grid-column: 5;
+    grid-row: 2;
+    text-align: left;
+    border: 2px solid;
+    border-color: black;
+    padding-left: 2px;
+    background-color: azure;
+}
+
+#blank2{
+    grid-column: 6;
+    grid-row: 2;
+    text-align: left;
+    border: 2px solid;
+    border-color: black;
+    padding-left: 2px;
+    background-color: azure;
+}
+
+#blank3{
+    grid-column: 7;
+    grid-row: 2;
+    text-align: left;
+    border: 2px solid;
+    border-color: black;
+    padding-left: 2px;
+    background-color: azure;
+}
+
+
+h3{
+    text-align: center;
+}
+

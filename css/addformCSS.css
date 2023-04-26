@@ -1,0 +1,30 @@
+#title{
+    text-align: center;
+    background-color: azure;
+}
+
+body{
+    background-color: antiquewhite;
+    
+}
+
+#menu{
+    text-align: center;
+}
+
+#container{
+    display: grid;
+    text-align: center;
+    background-color: azure;
+    grid-template-columns: 100%;
+    grid-template-rows: 375px;
+    
+}
+
+input[type=text] {
+    
+    width: 100%;
+    padding: 3px;
+    margin: 5px 0;
+    border: 1px solid #000000;
+    }

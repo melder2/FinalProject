@@ -1,0 +1,3323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MRE Database</title>
+    <link rel="stylesheet" href="css/indexCSS.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <div id="title"><h1>MRE Hospital Database</h1></div> 
+    </main>
+      <div id="menu">
+        <a href="#" onclick="Alert()">Previous Month</a>
+        <a href="#" onclick="Alert()">Previous Week</a>
+        <a href="simorsched.html">Home Page</a>
+        <a href="index2.html">Next Week</a>
+        <a href="#" onclick="Alert()">Next Month</a>
+        
+      </div> 
+
+    <div id="january">
+          <h2>January</h2>
+    </div>
+      <div id="container">
+        <div id="sunday"><strong>Sun</strong></div>
+        <div id="monday"><strong>Mon</strong></div>
+        <div id="tuesday"><strong>Tue</strong></div>
+        <div id="wednesday"><strong>Wed</strong></div>
+        <div id="thursday"><strong>Thu</strong></div>
+        <div id="friday"><strong>Fri</strong></div>
+        <div id="saturday"><strong>Sat</strong></div>
+
+        <div id="one">
+          <strong>1</strong>
+          
+        </div>
+        <div id="two">
+          <strong>2</strong>
+          <button id="viewappts2" class="btn" onclick="ViewAppts2()">View/Hide Appts</button>
+          <button id="addappts2" onclick="AddAppointment()">Add Appts</button>
+          <button id="cancelappts2" onclick="CancelAppointment()">Cancel Appts</button><br>
+          <a href="http://localhost:81/MRE Hospital Database - MAMP/php/day2.php">View Appointments</a>
+        
+        </div>
+        <div id="three">
+          <strong>3</strong>
+          <!--<button id="viewappts3" class="btn" onclick="ViewAppts3()">View/Hide Appts</button>
+          <button id="addappts3" onclick="AddAppointment()">Add Appts</button>
+          <button id="cancelappts3" onclick="CancelAppointment()">Cancel Appts</button>-->
+          <a href="http://localhost:81/MRE Hospital Database - MAMP/php/day3.php">View Appointments</a>
+         
+        </div>
+        <div id="four">
+          <strong>4</strong>
+          <!--<button id="viewappts4" class="btn" onclick="ViewAppts4()">View/Hide Appts</button>
+          <button id="addappts4" onclick="AddAppointment()">Add Appts</button>
+          <button id="cancelappts4" onclick="CancelAppointment()">Cancel Appts</button>-->
+          <a href="http://localhost:81/MRE Hospital Database - MAMP/php/day4.php">View Appointments</a>
+         
+        </div>
+        <div id="five">
+          <strong>5</strong>
+          <!--<button id="viewappts5" class="btn" onclick="ViewAppts5()">View/Hide Appts</button>
+          <button id="addappts5" onclick="AddAppointment()">Add Appts</button>
+          <button id="cancelappts5" onclick="CancelAppointment()">Cancel Appts</button>-->
+          <a href="http://localhost:81/MRE Hospital Database - MAMP/php/day5.php">View Appointments</a>
+          
+        </div>
+        <div id="six">
+          <strong>6</strong>
+          <!--<button id="viewappts6" class="btn" onclick="ViewAppts6()">View/Hide Appts</button>
+          <button id="addappts6" onclick="AddAppointment()">Add Appts</button>
+          <button id="cancelappts6" onclick="CancelAppointment()">Cancel Appts</button>-->
+          <a href="http://localhost:81/MRE Hospital Database - MAMP/php/day6.php">View Appointments</a>
+        </div>
+
+        <div id="seven"><strong>7</strong></div>
+
+        
+        
+        <div id="room1for2"class="roomtables"style="display: none;">
+            <h3>Room 1</h3>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Time Start</th>
+                <th>Time End</th>
+                <th>Patient ID</th>
+                <th>Doctor</th>
+                <th>Reason</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Room Number</th>
+              </tr>
+              <tr>
+                <td>Jan. 3</td>
+                <td>8am</td>
+                <td>9am</td>
+                <td></td>
+                <td>Jones</td>
+                <td>Knee</td>
+                <td>James</td>
+                <td>Smith</td>
+                <td>1</td>
+                
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>9am</td>
+                <td>10am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>10am</td>
+                <td>11am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>11am</td>
+                <td>12am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>12am</td>
+                <td>1pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>2pm</td>
+                <td>3pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>3pm</td>
+                <td>4pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>5pm</td>
+                <td>6pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+        
+        
+          </div>
+
+          <div id="mondayoutput"style="display: none;">
+            <h3><strong><u>Monday</u></strong></h3>
+            <h3>Click View/Hide Appts under Monday to look at different days</h3>
+          </div>
+
+          <div id="mondayoutput1"style="display: none;">
+            <h3><strong><u>Monday</u></strong></h3>
+            
+          </div>
+
+          <div id="mondayoutput2"style="display: none;">
+            <h3><strong><u>Monday</u></strong></h3>
+            
+          </div>
+
+          <!--<div id="tuesdayoutput"style="display: none;">
+            <h3><strong><u>Tuesday</u></strong></h3>
+            <h3>Click View/Hide Appts under Tuesday to look at different days</h3>
+          </div>-->
+
+          <!--<div id="tuesdayoutput1"style="display: none;">
+            <h3><strong><u>Tuesday</u></strong></h3>
+            
+          </div>-->
+
+          <!--<div id="tuesdayoutput2"style="display: none;">
+            <h3><strong><u>Tuesday</u></strong></h3>
+            
+          </div>-->
+
+          <!--<div id="wednesdayoutput"style="display: none;">
+            <h3><strong><u>Wednesday</u></strong></h3>
+            <h3>Click View/Hide Appts under Wednesday to look at different days</h3>
+          </div>-->
+
+          <!--<div id="wednesdayoutput1"style="display: none;">
+            <h3><strong><u>Wednesday</u></strong></h3>
+            
+          </div>-->
+
+          <!--<div id="wednesdayoutput2"style="display: none;">
+            <h3><strong><u>Wednesday</u></strong></h3>
+            
+          </div>-->
+
+          <!--<div id="thursdayoutput"style="display: none;">
+            <h3><strong><u>Thursday</u></strong></h3>
+            <h3>Click View/Hide Appts under Thursday to look at different days</h3>
+          </div>-->
+
+          <!--<div id="thursdayoutput1"style="display: none;">
+            <h3><strong><u>Thursday</u></strong></h3>
+            
+          </div>-->
+
+          <!--<div id="thursdayoutput2"style="display: none;">
+            <h3><strong><u>Thursday</u></strong></h3>
+            
+          </div>-->
+
+          <!--<div id="fridayoutput"style="display: none;">
+            <h3><strong><u>Friday</u></strong></h3>
+            <h3>Click View/Hide Appts under Friday to look at different days</h3>
+          </div>-->
+
+          <!--<div id="fridayoutput1"style="display: none;">
+            <h3><strong><u>Friday</u></strong></h3>
+            
+          </div>-->
+
+          <!--<div id="fridayoutput2"style="display: none;">
+            <h3><strong><u>Friday</u></strong></h3>
+            
+          </div>-->
+
+          <div id="room2for2"class="roomtables" style="display: none">
+            <h3>Room 2</h3>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Time Start</th>
+                <th>Time End</th>
+                <th>Patient ID</th>
+                <th>Doctor</th>
+                <th>Reason</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Room Number</th>
+              </tr>
+              <tr>
+                <td>Jan. 3</td>
+                <td>8am</td>
+                <td>9am</td>
+                <td></td>
+                <td>Jones</td>
+                <td>Knee</td>
+                <td>James</td>
+                <td>Smith</td>
+                <td>1</td>
+                
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>9am</td>
+                <td>10am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>10am</td>
+                <td>11am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>11am</td>
+                <td>12am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>12am</td>
+                <td>1pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>2pm</td>
+                <td>3pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>3pm</td>
+                <td>4pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>5pm</td>
+                <td>6pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="room3for2" class="roomtables" style="display: none">
+            <h3>Room 3</h3>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Time Start</th>
+                <th>Time End</th>
+                <th>Patient ID</th>
+                <th>Doctor</th>
+                <th>Reason</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Room Number</th>
+              </tr>
+              <tr>
+                <td>Jan. 3</td>
+                <td>8am</td>
+                <td>9am</td>
+                <td></td>
+                <td>Jones</td>
+                <td>Knee</td>
+                <td>James</td>
+                <td>Smith</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>9am</td>
+                <td>10am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>10am</td>
+                <td>11am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>11am</td>
+                <td>12am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>12am</td>
+                <td>1pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>2pm</td>
+                <td>3pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>3pm</td>
+                <td>4pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>5pm</td>
+                <td>6pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="room4for2" class="roomtables" style="display: none">
+            <h3>Room 4</h3>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Time Start</th>
+                <th>Time End</th>
+                <th>Patient ID</th>
+                <th>Doctor</th>
+                <th>Reason</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Room Number</th>
+              </tr>
+              <tr>
+                <td>Jan. 3</td>
+                <td>8am</td>
+                <td>9am</td>
+                <td></td>
+                <td>Jones</td>
+                <td>Knee</td>
+                <td>James</td>
+                <td>Smith</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>9am</td>
+                <td>10am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>10am</td>
+                <td>11am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>11am</td>
+                <td>12am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>12am</td>
+                <td>1pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>2pm</td>
+                <td>3pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>3pm</td>
+                <td>4pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>5pm</td>
+                <td>6pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="room5for2" class="roomtables" style="display: none">
+            <h3>Room 5</h3>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Time Start</th>
+                <th>Time End</th>
+                <th>Patient ID</th>
+                <th>Doctor</th>
+                <th>Reason</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Room Number</th>
+              </tr>
+              <tr>
+                <td>Jan. 3</td>
+                <td>8am</td>
+                <td>9am</td>
+                <td></td>
+                <td>Jones</td>
+                <td>Knee</td>
+                <td>James</td>
+                <td>Smith</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>9am</td>
+                <td>10am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>10am</td>
+                <td>11am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>11am</td>
+                <td>12am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>12am</td>
+                <td>1pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>2pm</td>
+                <td>3pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>3pm</td>
+                <td>4pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>5pm</td>
+                <td>6pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="room6for2" class="roomtables" style="display: none">
+            <h3>Room 6</h3>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Time Start</th>
+                <th>Time End</th>
+                <th>Patient ID</th>
+                <th>Doctor</th>
+                <th>Reason</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Room Number</th>
+              </tr>
+              <tr>
+                <td>Jan. 3</td>
+                <td>8am</td>
+                <td>9am</td>
+                <td></td>
+                <td>Jones</td>
+                <td>Knee</td>
+                <td>James</td>
+                <td>Smith</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>9am</td>
+                <td>10am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>10am</td>
+                <td>11am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>11am</td>
+                <td>12am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>12am</td>
+                <td>1pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>2pm</td>
+                <td>3pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>3pm</td>
+                <td>4pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Jan. 2</td>
+                <td>5pm</td>
+                <td>6pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+       
+          <!--Not needed code-->
+        <!--<div id="room1for3" class="roomtables" style="display: none;">
+          <h3>Room 1</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room2for3" class="roomtables" style="display: none">
+          <h3>Room 2</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room3for3" class="roomtables" style="display: none">
+          <h3>Room 3</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room4for3" class="roomtables" style="display: none">
+          <h3>Room 4</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room5for3" class="roomtables" style="display: none">
+          <h3>Room 5</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room6for3" class="roomtables" style="display: none">
+          <h3>Room 6</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room1for4" class="roomtables" style="display: none;">
+          <h3>Room 1</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room2for4" class="roomtables" style="display: none">
+          <h3>Room 2</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room3for4" class="roomtables" style="display: none">
+          <h3>Room 3</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room4for4" class="roomtables" style="display: none">
+          <h3>Room 4</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room5for4" class="roomtables" style="display: none">
+          <h3>Room 5</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room6for4" class="roomtables" style="display: none">
+          <h3>Room 6</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room1for5" class="roomtables" style="display: none;">
+          <h3>Room 1</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room2for5"style="display: none">
+          <h3>Room 2</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room3for5"style="display: none">
+          <h3>Room 3</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room4for5"style="display: none">
+          <h3>Room 4</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room5for5"style="display: none">
+          <h3>Room 5</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room6for5"style="display: none">
+          <h3>Room 6</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room1for6"style="display: none;">
+          <h3>Room 1</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room2for6"style="display: none">
+          <h3>Room 2</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room3for6"style="display: none">
+          <h3>Room 3</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room4for6"style="display: none">
+          <h3>Room 4</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room5for6"style="display: none">
+          <h3>Room 5</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="room6for6"style="display: none">
+          <h3>Room 6</h3>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time Start</th>
+              <th>Time End</th>
+              <th>Patient ID</th>
+              <th>Doctor</th>
+              <th>Reason</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Room Number</th>
+            </tr>
+
+            <tr>
+              <td>Jan. 3</td>
+              <td>8am</td>
+              <td>9am</td>
+              <td></td>
+              <td>Jones</td>
+              <td>Knee</td>
+              <td>James</td>
+              <td>Smith</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>9am</td>
+              <td>10am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>10am</td>
+              <td>11am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>11am</td>
+              <td>12am</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>12am</td>
+              <td>1pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>2pm</td>
+              <td>3pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>3pm</td>
+              <td>4pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Jan. 2</td>
+              <td>5pm</td>
+              <td>6pm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>-->
+
+      </div>
+
+
+
+     
+        
+	<script src="js/indexJavaS.js"></script>
+  </body>
+</html>
